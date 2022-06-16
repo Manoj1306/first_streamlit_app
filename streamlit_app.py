@@ -24,7 +24,7 @@ fruits_to_show= my_fruit_list.loc[fruits_selected]
 #display table on the page
 streamlit.dataframe(fruits_to_show)
 
-#import snowflake.connector
+import snowflake.connector
 #my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 #my_cur = my_cnx.cursor()
 #my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
